@@ -21,23 +21,32 @@ body {
 .font-paragraph {
   font-size: 14px;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5); 
+  margin: 0px;
 }
 
 .font-heading-paragraph {
   font-size: 16px;
   font-weight: 500;
+  margin: 0px;
 }
 
 .font-heading2 {
   font-size: 48px;
   font-weight: 900;
+  color:white;
+  margin: 0px;  
 }
 
 .font-heading3 {
   font-size: 18px;
   font-weight: 600;
   color: white;
+  margin: 0px;
+}
+
+img{
+  margin: 0px;
 }
 
 li {
@@ -181,6 +190,64 @@ nav > h3 {
   display: none;
 }
 
+/* main section start */
+main{
+  background: rgb(0, 0, 0);
+  margin: 0px;
+}
+.habits{
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.habits >p, h2{
+  text-align: center;
+}
+
+.habits > p{
+  margin: 10px 0px 50px;
+}
+
+.habits-cards{
+  display:flex;
+  align-items: center;
+  justify-content:space-around;
+}
+
+.h-card{
+  text-align: center;
+}
+
+.h-card>img{
+  border-radius: 100px;
+  margin-bottom: 20px;
+}
+
+.h-card > h3{
+  margin-bottom: 10px;
+}
+.h-card > p{
+  margin-bottom: 30px;
+}
+
+.run{
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 18px;  
+  background: rgb(34, 34, 34);
+  display: flex;
+  gap: 30%;   
+}
+
+.run > aside > h2 {
+  text-align: left;
+  margin-bottom: 10px;
+}
+.run > aside > p {  
+  margin-bottom: 20px;
+}
 
 /* Responsive design*/
 @media screen and (max-width:576px) {
