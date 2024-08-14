@@ -55,7 +55,8 @@ li {
 
 /* header section start */
 .header {
-  background-color: rgb(17, 17, 17);
+  /* background-color: rgb(17, 17, 17); */
+  background: linear-gradient(180.00deg, rgb(17, 17, 17, 0.9),rgba(17, 17, 17) 100%);
   padding-bottom: 50px;
 }
 
