@@ -529,7 +529,7 @@ table {
   left: 10px;
 }
 
-footer design 
+/* footer design  */
  .footer {
   background-color: rgb(26, 26, 26);
   margin: 0px;
@@ -558,15 +558,22 @@ footer design
   color: rgb(255, 255, 255);
   font-size: 28px;
   font-weight: 700;
+  text-align: left;
 }
 .footer-container > aside > ul {
   color: rgba(255, 255, 255, 0.5);
   font-size: 20px;
   font-weight: 400;
+  list-style: none;
+  padding-left: 0; 
+  margin: 0;
+  text-align: left;
+  
 }
 .footer-container > aside > ul>li{
   margin: 10px 0px;
   cursor: pointer;
+   
 }
 
 footer > hr{
@@ -652,5 +659,8 @@ footer > p{
   #team-1,
   #team-4 {
     display: none;
+  }
+  .footer-container{
+    flex-direction: column;
   }
 }
