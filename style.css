@@ -22,7 +22,7 @@ body {
   font-size: 14px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.5);
-  margin: 0px;
+  margin: 10px 0px 10px 0px;
 }
 
 .font-heading-paragraph {
@@ -268,7 +268,8 @@ h2 {
 
 .training {
   width: 80%;
-  margin: 80px auto;
+  margin: 80px auto 0px;
+  padding-bottom: 30px;
 }
 
 .training > h2 {
@@ -276,22 +277,28 @@ h2 {
   margin-bottom: 10px;
 }
 
+.grid-container{
+  margin: 50px 0px 80px;
+}
+
 .grid-row1 > div,
 .grid-row2 > div {
   height: 300px;
-  width: 100%;
+  width: auto;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   font-size: 14px;
   font-weight: 500;
   color:white;
   padding: 20px;
+  position: relative;
 }
 
 .pic-one {
   background-image: url("./images/exercise1.jpg");
   background-color: rgba(6, 255, 210, 0.5);
-  background-blend-mode: multiply;  
+  background-blend-mode: multiply;    
 }
 .pic-two {
   background-image: url("./images/exercise2.png");
@@ -318,6 +325,15 @@ h2 {
   background-color: rgba(0, 71, 255, 0.3);
   background-blend-mode: multiply;
 }
+
+.pic-one > p, .pic-three > p, .pic-five > p, .pic-six > p{
+  position: absolute;
+  bottom: 5px;
+}
+.pic-four > p{
+  position: absolute;
+  right: 60px;
+}
 #black{
   color:black;  
 }
@@ -328,6 +344,33 @@ h2 {
 .grid-row2 {
   display: grid;
   grid-template-columns: 1.5fr 1fr 1.5fr;
+}
+
+.bmi-heading{
+  width: 60%;
+  margin: 80px auto;
+}
+.bmi-heading >h2{
+  text-align: left;
+}
+
+.bmi-container{
+  background-color:rgb(34, 34, 34) ;
+}
+
+.bmi{
+  width: 80%;
+  margin: 0px auto;
+  display: flex;  
+  padding: 30px 0px 40px;
+  gap:20%;
+}
+
+.bmi-calc>h2, .bmi-chart>h2{
+  text-align: left;
+  font-size: 28px;
+  font-weight: 900;
+  color:white
 }
 
 /* Responsive design*/
@@ -355,4 +398,13 @@ h2 {
     max-height: 90%;
     max-width: 90%;
   }
+
+  .pic-three, .pic-six{
+    display: none;
+  }
+
+  .grid-row1,.grid-row2 {   
+    grid-template-columns: 1fr  1fr;
+  }
+  
 }
