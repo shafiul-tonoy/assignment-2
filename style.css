@@ -21,7 +21,7 @@ body {
 .font-paragraph {
   font-size: 14px;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.5); 
+  color: rgba(255, 255, 255, 0.5);
   margin: 0px;
 }
 
@@ -34,8 +34,8 @@ body {
 .font-heading2 {
   font-size: 48px;
   font-weight: 900;
-  color:white;
-  margin: 0px;  
+  color: white;
+  margin: 0px;
 }
 
 .font-heading3 {
@@ -45,7 +45,7 @@ body {
   margin: 0px;
 }
 
-img{
+img {
   margin: 0px;
 }
 
@@ -135,7 +135,7 @@ nav > h3 {
   margin-right: 30px;
 }
 
-.one{
+.one {
   width: 120px;
   height: 80px;
   border: 1px solid var(--gray);
@@ -147,7 +147,7 @@ nav > h3 {
   top: 20%;
   right: 0px;
 }
-.two{
+.two {
   width: 150px;
   height: 50px;
   border: 1px solid var(--gray);
@@ -178,7 +178,7 @@ nav > h3 {
   margin: 0px;
 }
 
-.circle{
+.circle {
   height: 40px;
   width: 40px;
   border-radius: 100px;
@@ -186,109 +186,172 @@ nav > h3 {
   background-color: var(--orange);
 }
 
-.font-awesome{
+.font-awesome {
   display: none;
 }
 
 /* main section start */
-main{
+main {
   background: rgb(0, 0, 0);
   margin: 0px;
 }
-.habits{
+.habits {
   width: 80%;
   margin: 0 auto;
   padding: 50px 0;
 }
 
-.habits >p, h2{
+.habits > p,
+h2 {
   text-align: center;
 }
 
-.habits > p{
+.habits > p {
   margin: 10px 0px 50px;
 }
 
-.habits-cards{
-  display:flex;
+.habits-cards {
+  display: flex;
   align-items: center;
-  justify-content:space-around;
+  justify-content: space-around;
 }
 
-.h-card{
+.h-card {
   text-align: center;
 }
 
-.h-card>img{
+.h-card > img {
   border-radius: 100px;
   margin-bottom: 20px;
 }
 
-.h-card > h3{
+.h-card > h3 {
   margin-bottom: 10px;
 }
-.h-card > p{
+.h-card > p {
   margin-bottom: 30px;
 }
 
-.run{
+.run {
   width: 80%;
   margin: 0 auto;
   padding: 20px;
-  border-radius: 18px;  
+  border-radius: 18px;
   background: rgb(34, 34, 34);
-  display: flex;  
-  justify-content: space-between; 
-  gap:5px;   
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
 }
 
 .run > aside > h2 {
   text-align: left;
   margin-bottom: 10px;
 }
-.run > aside > p {  
+.run > aside > p {
   margin: 30px 0px 50px;
 }
-.run > aside > button {  
+.run > aside > button {
   padding: 15px 50px;
-  color:white;
+  color: white;
   background-color: var(--orange);
   border: none;
   border-radius: 42px;
 }
 
-.run-aside{
-  padding: 20px 0px 0px 30px ;
+.run-aside {
+  padding: 20px 0px 0px 30px;
 }
 
-
-.run > aside >img{
-  border-radius: 18px; 
+.run > aside > img {
+  border-radius: 18px;
 }
-  
+
+.training {
+  width: 80%;
+  margin: 80px auto;
+}
+
+.training > h2 {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.grid-row1 > div,
+.grid-row2 > div {
+  height: 300px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 14px;
+  font-weight: 500;
+  color:white;
+  padding: 20px;
+}
+
+.pic-one {
+  background-image: url("./images/exercise1.jpg");
+  background-color: rgba(6, 255, 210, 0.5);
+  background-blend-mode: multiply;  
+}
+.pic-two {
+  background-image: url("./images/exercise2.png");
+  background-color: rgba(255, 0, 0, 0.3);
+  background-blend-mode: multiply;
+}
+.pic-three {
+  background-image: url("./images/exercise3.png");
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+}
+.pic-four {
+  background-image: url("./images/exercise4.png");
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;  
+}
+.pic-five {
+  background-image: url("./images/exercise5.jpg");
+  background-color: rgba(66, 255, 0, 0.3);
+  background-blend-mode: multiply;
+}
+.pic-six {
+  background-image: url("./images/exercise6.jpg");
+  background-color: rgba(0, 71, 255, 0.3);
+  background-blend-mode: multiply;
+}
+#black{
+  color:black;  
+}
+.grid-row1 {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+.grid-row2 {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.5fr;
+}
 
 /* Responsive design*/
-@media screen and (max-width:576px) {
-  .font-awesome{
+@media screen and (max-width: 576px) {
+  .font-awesome {
     display: block;
   }
-  .nav-items{
+  .nav-items {
     display: none;
   }
   .header-body {
     flex-direction: column;
   }
 
-  .habits-cards{
+  .habits-cards {
     flex-direction: column;
   }
 
-  .run{
+  .run {
     flex-direction: column;
   }
 
-  .run > aside >img{
-    border-radius: 18px; 
+  .run > aside > img {
+    border-radius: 18px;
     max-height: 90%;
     max-width: 90%;
   }
